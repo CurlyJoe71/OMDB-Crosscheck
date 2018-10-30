@@ -16,7 +16,8 @@ var shinobiQueryURL = 'https://api.hillbillysoftware.com/Cast/ActorBySearch/f729
 
     $.ajax({
     method: "GET",
-    url: shinobiQueryURL + input1
+    url: shinobiQueryURL + input1,
+    accept: "application/json"
 }).then(function(response) {
     // input1Return = $(this).response;
     console.log(response);
